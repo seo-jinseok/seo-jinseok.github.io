@@ -1116,11 +1116,14 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 Jinseok Seo. All rights reserved.</p>
+            <p>&copy; <span id="current-year"></span> Jinseok Seo. All rights reserved.</p>
         </div>
     </footer>
 
     <script>
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
         // Navigation toggle for mobile
         const navToggle = document.querySelector('.nav-toggle');
         const navLinks = document.querySelector('.nav-links');
